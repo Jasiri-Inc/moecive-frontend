@@ -1,25 +1,25 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Header from "./components/Header";
+import Maincontent from "./components/Maincontent";
+import Footer from "./components/Footer";
 
 
 const App = () => {
     return (
-     <div>
-         <h1>Hello</h1>
-         <p>I just greet </p>
-         <ol>
-             <li>Hi</li>
-             <li>Hey</li>
 
-         </ol>
-     </div>
+        <div>
+            <Header/>
+            <Maincontent/>
+            <Footer/>
+        </div>
 
     );
 };
 
 
 render(
-   <App />,
+    <App/>,
     document.getElementById("root")
 );
 

@@ -4,7 +4,8 @@ const Maincontent = () => {
     return (
         <div>
 
-            This is the Place for my Content
+            <input type="checkbox"/>
+            <p>Bruno</p>
 
         </div>
     );
