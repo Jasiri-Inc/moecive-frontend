@@ -2,18 +2,25 @@ import React from 'react';
 import {render} from 'react-dom';
 
 
-const Hello = () => {
+const App = () => {
     return (
-       <ol>
-           <li>1</li>
-           <li>2</li>
-           <li>3</li>
-       </ol>
+     <div>
+         <h1>Hello</h1>
+         <p>I just greet </p>
+         <ol>
+             <li>Hi</li>
+             <li>Hey</li>
+
+         </ol>
+     </div>
+
     );
 };
 
 
 render(
-   <Hello />,
+   <App />,
     document.getElementById("root")
 );
+
+export default App;
