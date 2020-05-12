@@ -25,7 +25,17 @@ class Maincontent extends Component {
         return (
             <div>
                 {list.map(function (item) {
-                    return <div>{item.title}</div>
+                    return (
+                        <div>
+                            <span>
+                            <a href="item.url">{item.url}</a>
+                        </span>
+                            <span>{item.author}</span>
+                            <span>{item.points}</span>
+                            <span>{item.objectID}</span>
+                            <span>{item.num_comments}</span>
+                        </div>
+                    );
                 })}
             </div>
         );

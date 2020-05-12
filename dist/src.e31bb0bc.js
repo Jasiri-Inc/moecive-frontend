@@ -28372,7 +28372,9 @@ var Maincontent = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", null, list.map(function (item) {
-        return /*#__PURE__*/_react.default.createElement("div", null, item.title);
+        return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("a", {
+          href: "item.url"
+        }, item.url)), /*#__PURE__*/_react.default.createElement("span", null, item.author), /*#__PURE__*/_react.default.createElement("span", null, item.points), /*#__PURE__*/_react.default.createElement("span", null, item.objectID), /*#__PURE__*/_react.default.createElement("span", null, item.num_comments));
       }));
     }
   }]);
