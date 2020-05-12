@@ -23,7 +23,7 @@ render(
     document.getElementById("root")
 );
 
-//Hot Module Replacement
+//(HRM)-Hot Module Replacement
 if(module.hot){
     module.hot.accept();
 }

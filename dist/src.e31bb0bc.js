@@ -28341,6 +28341,22 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+var list = [{
+  title: 'React',
+  url: 'https://facebook.github.io/react/',
+  author: 'Jordan Walke',
+  num_comments: 3,
+  points: 4,
+  objectID: 0
+}, {
+  title: 'Redux',
+  url: 'https://github.com/reactjs/redux',
+  author: 'Dan Abramov, Andrew Clark',
+  num_comments: 2,
+  points: 5,
+  objectID: 1
+}];
+
 var Maincontent = /*#__PURE__*/function (_Component) {
   _inherits(Maincontent, _Component);
 
@@ -28355,9 +28371,9 @@ var Maincontent = /*#__PURE__*/function (_Component) {
   _createClass(Maincontent, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("input", {
-        type: "checkbox"
-      }), /*#__PURE__*/_react.default.createElement("p", null, "Bruno A"));
+      return /*#__PURE__*/_react.default.createElement("div", null, list.map(function (item) {
+        return /*#__PURE__*/_react.default.createElement("div", null, item.title);
+      }));
     }
   }]);
 
@@ -28445,7 +28461,7 @@ var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Maincontent.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
-(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root")); //Hot Module Replacement
+(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root")); //(HRM)-Hot Module Replacement
 
 if (module.hot) {
   module.hot.accept();
