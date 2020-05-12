@@ -26,13 +26,12 @@ class Maincontent extends Component {
             <div>
                 {list.map(function (item) {
                     return (
-                        <div>
+                        <div key={item.objectID}>
                             <span>
                             <a href="item.url">{item.url}</a>
                         </span>
                             <span>{item.author}</span>
                             <span>{item.points}</span>
-                            <span>{item.objectID}</span>
                             <span>{item.num_comments}</span>
                         </div>
                     );
