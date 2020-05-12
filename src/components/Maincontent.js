@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Maincontent = () => {
-    return (
+class Maincontent extends Component {
+    render() {
+
+        return (
         <div>
-
             <input type="checkbox"/>
-            <p>Bruno</p>
-
+            <p>Bruno A</p>
         </div>
-    );
-
+        );
+    }
 }
+
+
 
 export default Maincontent;

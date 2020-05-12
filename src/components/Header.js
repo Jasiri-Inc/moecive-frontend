@@ -5,4 +5,5 @@ const Header = () => {
         <div className="details">This Is The Header</div>
     );
 }
+
 export default Header;
