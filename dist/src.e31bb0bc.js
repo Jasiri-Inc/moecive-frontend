@@ -28429,11 +28429,6 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = require("react-dom");
@@ -28450,9 +28445,11 @@ var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Maincontent.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
-(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
-var _default = App;
-exports.default = _default;
+(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root")); //Hot Module Replacement
+
+if (module.hot) {
+  module.hot.accept();
+}
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/Header":"components/Header.js","./components/Maincontent":"components/Maincontent.js","./components/Footer":"components/Footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

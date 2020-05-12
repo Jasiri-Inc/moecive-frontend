@@ -23,4 +23,7 @@ render(
     document.getElementById("root")
 );
 
-export default App;
+//Hot Module Replacement
+if(module.hot){
+    module.hot.accept();
+}
