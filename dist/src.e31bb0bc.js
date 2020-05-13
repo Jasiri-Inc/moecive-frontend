@@ -28331,6 +28331,10 @@ var list = [{
   "name": "James",
   "age": 73,
   "objectID": 2
+}, {
+  "name": "James",
+  "age": 73,
+  "objectID": 2
 }];
 
 var Header = /*#__PURE__*/function (_React$Component) {
@@ -28353,10 +28357,17 @@ var Header = /*#__PURE__*/function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return /*#__PURE__*/_react.default.createElement("div", null, list.map(function (item) {
         return /*#__PURE__*/_react.default.createElement("div", {
           key: item.objectID
-        }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.name), /*#__PURE__*/_react.default.createElement("span", null, item.age), /*#__PURE__*/_react.default.createElement("br", null));
+        }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.name), /*#__PURE__*/_react.default.createElement("span", null, item.age), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("button", {
+          onClick: function onClick() {
+            return _this2.onDismiss(item.objectID);
+          },
+          type: "button"
+        }, "Dismiss")));
       }));
     }
   }]);

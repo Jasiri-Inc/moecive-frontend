@@ -16,6 +16,7 @@ const list = [
         points: 5,
         objectID: 1,
     }
+
 ]
 
 

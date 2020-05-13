@@ -19,6 +19,12 @@ const list = [
         "objectID": 2
 
     },
+    {
+        "name": "James",
+        "age": 73,
+        "objectID": 2
+
+    },
 ]
 
 class Header extends React.Component {
@@ -39,6 +45,13 @@ class Header extends React.Component {
                     <span>{item.name}</span>
                     <span>{item.age}</span>
                     <br/>
+                    <span>
+                        <button onClick={() => this.onDismiss(item.objectID)}
+                                type="button">
+                            Dismiss
+
+                        </button>
+                    </span>
                 </div>)}
             </div>
         );
