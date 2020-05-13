@@ -4,16 +4,19 @@ const list = [
     {
         "name": "James",
         "age": 20,
+        "objectID": 0
 
     },
     {
         "name": "Zoo",
         "age": 17,
+        "objectID": 1
 
     },
     {
         "name": "James",
         "age": 73,
+        "objectID": 2
 
     },
 ]
@@ -26,6 +29,19 @@ class Header extends React.Component {
         this.state = {
             list: list,
         };
+    }
+
+    render() {
+        return (
+            <div>
+                {list.map(item => <div key={item.objectID}>
+                    <br/>
+                    <span>{item.name}</span>
+                    <span>{item.age}</span>
+                    <br/>
+                </div>)}
+            </div>
+        );
     }
 }
 
