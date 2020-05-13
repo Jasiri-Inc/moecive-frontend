@@ -28372,9 +28372,11 @@ var Maincontent = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", null, list.map(function (item) {
-        return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("a", {
+        return /*#__PURE__*/_react.default.createElement("div", {
+          key: item.objectID
+        }, /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("a", {
           href: "item.url"
-        }, item.url)), /*#__PURE__*/_react.default.createElement("span", null, item.author), /*#__PURE__*/_react.default.createElement("span", null, item.points), /*#__PURE__*/_react.default.createElement("span", null, item.objectID), /*#__PURE__*/_react.default.createElement("span", null, item.num_comments));
+        }, item.url)), /*#__PURE__*/_react.default.createElement("span", null, item.author), /*#__PURE__*/_react.default.createElement("span", null, item.points), /*#__PURE__*/_react.default.createElement("span", null, item.num_comments));
       }));
     }
   }]);
@@ -28420,6 +28422,50 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+var list = [{
+  "id": 1,
+  "first_name": "Mahala",
+  "last_name": "Thurley",
+  "email": null,
+  "gender": "Female",
+  "country": "China"
+}, {
+  "id": 2,
+  "first_name": "Emelita",
+  "last_name": "Bittleson",
+  "email": "ebittleson1@github.io",
+  "gender": "Female",
+  "country": "China"
+}, {
+  "id": 3,
+  "first_name": "Cate",
+  "last_name": "Edens",
+  "email": "cedens2@upenn.edu",
+  "gender": "Female",
+  "country": "Kosovo"
+}, {
+  "id": 4,
+  "first_name": "Merwyn",
+  "last_name": "Genny",
+  "email": "mgenny3@youtube.com",
+  "gender": "Male",
+  "country": "Guyana"
+}, {
+  "id": 5,
+  "first_name": "Suzette",
+  "last_name": "Durham",
+  "email": null,
+  "gender": "Female",
+  "country": "Azerbaijan"
+}, {
+  "id": 6,
+  "first_name": "Heriberto",
+  "last_name": "Irdale",
+  "email": "hirdale5@smh.com.au",
+  "gender": "Male",
+  "country": "China"
+}];
+
 var Footer = /*#__PURE__*/function (_Component) {
   _inherits(Footer, _Component);
 
@@ -28434,8 +28480,11 @@ var Footer = /*#__PURE__*/function (_Component) {
   _createClass(Footer, [{
     key: "render",
     value: function render() {
-      var helloWorld = 'Hello World';
-      return /*#__PURE__*/_react.default.createElement("div", null, helloWorld);
+      return /*#__PURE__*/_react.default.createElement("div", null, list.map(function (item) {
+        return /*#__PURE__*/_react.default.createElement("div", {
+          key: item.id
+        }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.first_name, " ", item.last_name), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.country), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.email), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.gender), /*#__PURE__*/_react.default.createElement("br", null));
+      }));
     }
   }]);
 
@@ -28496,7 +28545,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38711" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35893" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
