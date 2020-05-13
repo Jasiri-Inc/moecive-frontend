@@ -28351,10 +28351,20 @@ var Header = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       list: list
     };
+    _this.onDismiss = _this.onDismiss.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(Header, [{
+    key: "onDismiss",
+    value: function onDismiss(id) {
+      function isNotId(item) {
+        return item.objectID !== id;
+      }
+
+      var updatedList = this.state.list.filter(isNotId);
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
