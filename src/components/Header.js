@@ -42,6 +42,7 @@ class Header extends React.Component {
 
         const isNotId = item => item.objectID !== id;
         const updatedList = this.state.list.filter(isNotId)
+        this.setState({list: updatedList});
     }
 
     render() {

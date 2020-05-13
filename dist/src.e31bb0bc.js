@@ -28358,11 +28358,14 @@ var Header = /*#__PURE__*/function (_React$Component) {
   _createClass(Header, [{
     key: "onDismiss",
     value: function onDismiss(id) {
-      function isNotId(item) {
+      var isNotId = function isNotId(item) {
         return item.objectID !== id;
-      }
+      };
 
       var updatedList = this.state.list.filter(isNotId);
+      this.setState({
+        list: updatedList
+      });
     }
   }, {
     key: "render",
