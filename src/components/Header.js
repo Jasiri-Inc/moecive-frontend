@@ -35,6 +35,14 @@ class Header extends React.Component {
         this.state = {
             list: list,
         };
+        this.onDismiss = this.onDismiss.bind(this);
+    }
+
+    onDismiss(id) {
+        const updatedList = this.state.list.filter(function isNotid(item) {
+            return item.objectID !== id;
+
+        })
     }
 
     render() {
