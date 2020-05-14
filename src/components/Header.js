@@ -14,15 +14,15 @@ const list = [
 
     },
     {
-        "name": "James",
+        "name": "Junior",
         "age": 73,
         "objectID": 2
 
     },
     {
-        "name": "James",
+        "name": "Jacob",
         "age": 73,
-        "objectID": 2
+        "objectID": 3
 
     },
 ]
@@ -33,7 +33,7 @@ class Header extends React.Component {
         super(props);
 
         this.state = {
-            list: list,
+            list: list
         };
         this.onDismiss = this.onDismiss.bind(this);
     }
@@ -41,26 +41,28 @@ class Header extends React.Component {
     onDismiss(id) {
 
         const isNotId = item => item.objectID !== id;
-        const updatedList = this.state.list.filter(isNotId)
+        const updatedList = this.state.list.filter(isNotId);
         this.setState({list: updatedList});
     }
 
     render() {
         return (
             <div>
-                {list.map(item => <div key={item.objectID}>
-                    <br/>
-                    <span>{item.name}</span>
-                    <span>{item.age}</span>
-                    <br/>
-                    <span>
-                        <button onClick={() => this.onDismiss(item.objectID)}
-                                type="button">
+                {this.state.list.map(item =>
+                    <div key={item.objectID}>
+                        <br/>
+                        <span>{item.name}</span>
+                        <span>{item.age}</span>
+                        <br/>
+                        <span>
+                        <button
+                            onClick={this.onDismiss}
+                            type="button"
+                        >
                             Dismiss
-
                         </button>
-                    </span>
-                </div>)}
+                        </span>
+                    </div>)}
             </div>
         );
     }

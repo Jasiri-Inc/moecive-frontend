@@ -1,8 +1,11 @@
 import React from 'react';
 import {render} from 'react-dom';
+
+// Custom Components
 import Header from "./components/Header";
 import Maincontent from "./components/Maincontent";
 import Footer from "./components/Footer";
+import Submit from "./components/Submit";
 
 
 const App = () => {
@@ -12,18 +15,20 @@ const App = () => {
             <Header/>
             <Maincontent/>
             <Footer/>
+            <Submit />
         </div>
 
     );
 };
 
 
+const rootElement = document.getElementById("root");
 render(
     <App/>,
-    document.getElementById("root")
+    rootElement
 );
 
 //(HRM)-Hot Module Replacement
-if(module.hot){
+if (module.hot) {
     module.hot.accept();
 }

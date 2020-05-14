@@ -28328,13 +28328,13 @@ var list = [{
   "age": 17,
   "objectID": 1
 }, {
-  "name": "James",
+  "name": "Junior",
   "age": 73,
   "objectID": 2
 }, {
-  "name": "James",
+  "name": "Jacob",
   "age": 73,
-  "objectID": 2
+  "objectID": 3
 }];
 
 var Header = /*#__PURE__*/function (_React$Component) {
@@ -28372,13 +28372,11 @@ var Header = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return /*#__PURE__*/_react.default.createElement("div", null, list.map(function (item) {
+      return /*#__PURE__*/_react.default.createElement("div", null, this.state.list.map(function (item) {
         return /*#__PURE__*/_react.default.createElement("div", {
           key: item.objectID
         }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.name), /*#__PURE__*/_react.default.createElement("span", null, item.age), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("button", {
-          onClick: function onClick() {
-            return _this2.onDismiss(item.objectID);
-          },
+          onClick: _this2.onDismiss,
           type: "button"
         }, "Dismiss")));
       }));
@@ -28578,6 +28576,77 @@ var Footer = /*#__PURE__*/function (_Component) {
 
 var _default = Footer;
 exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/Submit.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var SubmitButton = /*#__PURE__*/function (_Component) {
+  _inherits(SubmitButton, _Component);
+
+  var _super = _createSuper(SubmitButton);
+
+  function SubmitButton(props) {
+    var _this;
+
+    _classCallCheck(this, SubmitButton);
+
+    _this = _super.call(this, props);
+    _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(SubmitButton, [{
+    key: "onSubmit",
+    value: function onSubmit() {
+      console.log("Submitted !");
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.onSubmit,
+        type: "button"
+      }, "Submit!")));
+    }
+  }]);
+
+  return SubmitButton;
+}(_react.Component);
+
+var _default = SubmitButton;
+exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
@@ -28591,18 +28660,22 @@ var _Maincontent = _interopRequireDefault(require("./components/Maincontent"));
 
 var _Footer = _interopRequireDefault(require("./components/Footer"));
 
+var _Submit = _interopRequireDefault(require("./components/Submit"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Custom Components
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Maincontent.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Maincontent.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null), /*#__PURE__*/_react.default.createElement(_Submit.default, null));
 };
 
-(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root")); //(HRM)-Hot Module Replacement
+var rootElement = document.getElementById("root");
+(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), rootElement); //(HRM)-Hot Module Replacement
 
 if (module.hot) {
   module.hot.accept();
 }
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/Header":"components/Header.js","./components/Maincontent":"components/Maincontent.js","./components/Footer":"components/Footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/Header":"components/Header.js","./components/Maincontent":"components/Maincontent.js","./components/Footer":"components/Footer.js","./components/Submit":"components/Submit.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28630,7 +28703,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46479" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36959" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
