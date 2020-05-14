@@ -27,7 +27,7 @@ const list = [
     },
 ]
 
-class Header extends React.Component {
+class Dismiss extends React.Component {
 
     constructor(props) {
         super(props);
@@ -43,6 +43,7 @@ class Header extends React.Component {
         const isNotId = item => item.objectID !== id;
         const updatedList = this.state.list.filter(isNotId);
         this.setState({list: updatedList});
+        console.log(`item with objectId ${id} is Deleted`);
     }
 
     render() {
@@ -52,6 +53,7 @@ class Header extends React.Component {
                     <div key={item.objectID}>
                         <br/>
                         <span>{item.name}</span>
+                        <br/>
                         <span>{item.age}</span>
                         <br/>
                         <span>
@@ -68,4 +70,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default Dismiss;

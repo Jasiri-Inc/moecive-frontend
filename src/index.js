@@ -2,20 +2,22 @@ import React from 'react';
 import {render} from 'react-dom';
 
 // Custom Components
-import Header from "./components/Header";
+import Dismiss from "./components/Dismiss";
 import Maincontent from "./components/Maincontent";
 import Footer from "./components/Footer";
 import Submit from "./components/Submit";
+import Form from "./components/Form";
 
 
 const App = () => {
     return (
 
         <div>
-            <Header/>
+            <Dismiss/>
             <Maincontent/>
             <Footer/>
             <Submit />
+           <Form />
         </div>
 
     );
