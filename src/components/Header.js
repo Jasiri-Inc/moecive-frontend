@@ -47,7 +47,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="details">
                 {this.state.list.map(item =>
                     <div key={item.objectID}>
                         <br/>
@@ -56,7 +56,7 @@ class Header extends React.Component {
                         <br/>
                         <span>
                         <button
-                            onClick={this.onDismiss}
+                            onClick={() => this.onDismiss(item.objectID)}
                             type="button"
                         >
                             Dismiss

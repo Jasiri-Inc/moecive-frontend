@@ -28372,11 +28372,15 @@ var Header = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return /*#__PURE__*/_react.default.createElement("div", null, this.state.list.map(function (item) {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "details"
+      }, this.state.list.map(function (item) {
         return /*#__PURE__*/_react.default.createElement("div", {
           key: item.objectID
         }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, item.name), /*#__PURE__*/_react.default.createElement("span", null, item.age), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("button", {
-          onClick: _this2.onDismiss,
+          onClick: function onClick() {
+            return _this2.onDismiss(item.objectID);
+          },
           type: "button"
         }, "Dismiss")));
       }));
@@ -28630,12 +28634,14 @@ var SubmitButton = /*#__PURE__*/function (_Component) {
   _createClass(SubmitButton, [{
     key: "onSubmit",
     value: function onSubmit() {
-      console.log("Submitted !");
+      console.log("Submitted bby!");
     }
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("button", {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "details"
+      }, /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.onSubmit,
         type: "button"
       }, "Submit!")));

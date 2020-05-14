@@ -266,10 +266,9 @@ header {
 
     .details {
         width: 95%;
-        margin: 0 auto;
         padding: 15px;
         border-radius: 9px;
-        margin-bottom: 25px;
+        margin: 0 auto 25px;
     }
 
     .info {

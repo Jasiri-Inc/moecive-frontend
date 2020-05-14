@@ -46,6 +46,7 @@ const list = [
 ]
 
 class Footer extends Component {
+
     render() {
 
         return (

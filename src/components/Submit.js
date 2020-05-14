@@ -7,12 +7,12 @@ class SubmitButton extends Component {
     }
 
     onSubmit(){
-        console.log("Submitted !");
+        console.log("Submitted bby!");
     }
 
     render() {
         return (
-            <div>
+            <div className="details">
                 <span>
                     <button onClick={this.onSubmit}
                             type="button"
