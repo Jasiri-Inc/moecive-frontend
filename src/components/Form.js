@@ -23,6 +23,15 @@ const list = [
     }
 ]
 
+//To search depending on the User's Input.
+function isSearched(searchTerm) {
+    return function(item) {
+        return item.title.toLowerCase().includes(searchTerm.toLowerCase());
+
+    }
+
+}
+
 class Form extends Component {
     constructor(props) {
         super(props);
@@ -35,7 +44,8 @@ class Form extends Component {
     }
 
     onSearchChange(event) {
-        console.log('Event Handle Working!');
+        this.setState({searchTerm: event.target.value})
+        console.log(`changes occurring are: ${event.target.value}`);
     }
 
     render() {
@@ -43,7 +53,7 @@ class Form extends Component {
             <div>
                 <form action="">
                     <input type="text"
-                           onSearchChange={this.onSearchChange}
+                           onChange={this.onSearchChange}
                     />
                 </form>
             </div>

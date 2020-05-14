@@ -28705,7 +28705,13 @@ var list = [{
 }, {
   course: "CIS",
   years: 3
-}];
+}]; //To search depending on the User's Input.
+
+function isSearched(searchTerm) {
+  return function (item) {
+    return item.title.toLowerCase().includes(searchTerm.toLowerCase());
+  };
+}
 
 var Form = /*#__PURE__*/function (_Component) {
   _inherits(Form, _Component);
@@ -28729,7 +28735,10 @@ var Form = /*#__PURE__*/function (_Component) {
   _createClass(Form, [{
     key: "onSearchChange",
     value: function onSearchChange(event) {
-      console.log('Event Handle Working!');
+      this.setState({
+        searchTerm: event.target.value
+      });
+      console.log("changes occurring are: ".concat(event.target.value));
     }
   }, {
     key: "render",
@@ -28738,7 +28747,7 @@ var Form = /*#__PURE__*/function (_Component) {
         action: ""
       }, /*#__PURE__*/_react.default.createElement("input", {
         type: "text",
-        onSearchChange: this.onSearchChange
+        onChange: this.onSearchChange
       })));
     }
   }]);
