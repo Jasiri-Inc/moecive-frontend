@@ -2,22 +2,27 @@ import React, {Component} from 'react';
 
 const list = [
     {
+        id: 0,
         course: "SE",
         years: 4
     },
     {
+        id: 1,
         course: "CS",
         years: 3
     },
     {
+        id: 2,
         course: "TE",
         years: 4
     },
     {
+        id: 3,
         course: "BIS",
         years: 3
     },
     {
+        id: 4,
         course: "CIS",
         years: 3
     }
@@ -25,7 +30,7 @@ const list = [
 
 //To search depending on the User's Input.
 function isSearched(searchTerm) {
-    return function(item) {
+    return function (item) {
         return item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
     }
@@ -56,6 +61,12 @@ class Form extends Component {
                            onChange={this.onSearchChange}
                     />
                 </form>
+                {this.state.list.filter(isSearched(this.state.searchTerm)).map(item =>
+                    <div key={item.id}>
+                        <span>{item.course}</span>
+                        <span>{item.years}</span>
+                    </div>
+                )}
             </div>
 
         );
