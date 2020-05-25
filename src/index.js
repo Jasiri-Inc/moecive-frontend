@@ -3,21 +3,21 @@ import {render} from 'react-dom';
 
 // Custom Components
 import Dismiss from "./components/Dismiss";
-import Maincontent from "./components/Maincontent";
-import Footer from "./components/Footer";
 import Submit from "./components/Submit";
-import Form from "./components/Form";
+import Form from "./components/useDropdown";
 
 
 const App = () => {
     return (
 
         <div>
-            <Dismiss/>
-            <Maincontent/>
-            <Footer/>
-            <Submit />
+
+            {/*<Dismiss/>*/}
+            {/*<Maincontent/>*/}
+            {/*<Footer/>*/}
+            {/*<Submit />*/}
            <Form />
+
         </div>
 
     );
@@ -31,6 +31,6 @@ render(
 );
 
 //(HRM)-Hot Module Replacement
-if (module.hot) {
-    module.hot.accept();
-}
+// if (module.hot) {
+//     module.hot.accept();
+// }
