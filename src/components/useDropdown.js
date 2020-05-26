@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 const useDropdown = (label, defaultState, options ) => {
-    const [state, updateState] = useState("");
+    const [state, updateState] = useState(defaultState);
     const id = ``;
 
     const Dropdown = () => (

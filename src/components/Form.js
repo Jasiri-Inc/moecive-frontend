@@ -1,20 +1,17 @@
-import React from "react";
-import useDropdown from "./useDropdown";
+import React, {useState} from "react";
 
-const COURSES = ["SE", "CE", "TE", "BIS"];
-
-const Form = () => {
-
-    const [course, CourseDropdown] = useDropdown("Course", "SE", COURSES)
+const counterFun = () => {
+    const [count, updateCount] = useState(0);
 
     return(
-
         <div>
-
-            <CourseDropdown/>
-
+            <p>You clicked it {count}</p>
+            <button
+            onClick={() => updateCount(count + 1)}
+            >
+                Click Me
+            </button>
         </div>
     )
 }
-
-export default Form;
+export default counterFun;

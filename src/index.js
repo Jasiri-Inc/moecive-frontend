@@ -2,8 +2,6 @@ import React from 'react';
 import {render} from 'react-dom';
 
 // Custom Components
-import Dismiss from "./components/Dismiss";
-import Submit from "./components/Submit";
 import Form from "./components/Form";
 
 
@@ -12,10 +10,6 @@ const App = () => {
 
         <div>
 
-            {/*<Dismiss/>*/}
-            {/*<Maincontent/>*/}
-            {/*<Footer/>*/}
-            {/*<Submit />*/}
            <Form />
 
         </div>
