@@ -1,21 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
+import App from "./App";
 
-// Custom Components
-import Form from "./components/Form";
-
-
-const App = () => {
-    return (
-
-        <div>
-
-           <Form />
-
-        </div>
-
-    );
-};
 
 
 const rootElement = document.getElementById("root");
@@ -25,6 +11,8 @@ render(
 );
 
 //(HRM)-Hot Module Replacement
-// if (module.hot) {
-//     module.hot.accept();
-// }
+if (module.hot) {
+    module.hot.accept('./App', () => {
+        render(<App/>, rootElement)
+    });
+}

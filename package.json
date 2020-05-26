@@ -4,12 +4,15 @@
   "description": "React Learning",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel -p 5678 src/index.html"
+    "dev": "parcel -p 5678 public/index.html"
   },
   "repository": "https://github.com/brunoalfred/ui.git",
   "author": "Bruno Alfred <alfredybruno@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
