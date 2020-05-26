@@ -1,17 +1,26 @@
-import React, {useState} from "react";
+import React, {useState, useEffect}from "react";
 
-const counterFun = () => {
-    const [count, updateCount] = useState(0);
+const IncrButton = () => {
+    const [count, countUpdate] = useState(0);
+
+
+    useEffect(() => {
+        document.title = `you clicked ${count}`;
+    })
+
 
     return(
+
         <div>
-            <p>You clicked it {count}</p>
+            <p>You clicked {count}</p>
             <button
-            onClick={() => updateCount(count + 1)}
+            onClick={() => countUpdate(count + 1)}
             >
-                Click Me
+                click me
             </button>
         </div>
+
     )
 }
-export default counterFun;
+
+export default IncrButton;
