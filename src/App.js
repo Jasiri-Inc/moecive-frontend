@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SimplePaper from "./components/HomePage";
+import HomePage from "./components/HomePage";
 
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div>
 
-            <SimplePaper/>
+            <HomePage/>
 
         </div>
     )
