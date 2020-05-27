@@ -1,12 +1,15 @@
 import React, {Component} from "react";
-import NavBar from "./components/NavBar";
+import SimplePaper from "./components/HomePage";
+
 
 const App = () => {
 
 
     return (
         <div>
-            <NavBar/>
+
+            <SimplePaper/>
+
         </div>
     )
 }

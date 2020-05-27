@@ -77,6 +77,7 @@ const useStyles = makeStyles((theme) => ({
             display: 'none',
         },
     },
+
 }));
 
 export default function PrimarySearchAppBar() {
@@ -174,7 +175,7 @@ export default function PrimarySearchAppBar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        Material-UI
+                        Bruno
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
