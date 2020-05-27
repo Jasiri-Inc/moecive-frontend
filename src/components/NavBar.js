@@ -1,49 +1,52 @@
-import React from "react";
-import {makeStyles} from "@material-ui/core/styles"
-import {AppBar, Button, Typography, IconButton} from "@material-ui/core";
-import Toolbar from "@material-ui/core/Toolbar";
-import MenuIcon from "@material-ui/icons/Menu";
+import React, {useState} from "react";
+import {makeStyles} from "@material-ui/core/styles";
+import {AppBar, IconButton, Typography, InputBase, Toolbar} from "@material-ui/core";
+import { MenuIcon } from "@material-ui/icons/Menu"
 
-
-const useStyle = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1
+const useStyles = makeStyles((theme) => ({
+    grow: {
+        flexGrow: 1,
     },
-
     menuButton: {
-        marginRight: theme.spacing(1),
+        marginRight: theme.spacing(2),
     },
-
     title: {
-        flexGrow: 1
-    },
+        display: 'none',
+        [theme.breakpoints.up('sm')]: {
+            display: 'block'
+        }
+    }
 
 
 }));
 
 
-const NavBar = () => {
+export default function PrimarySearchBar() {
 
-    const classes = useStyle();
+    const classes = useStyles();
 
-    return (
-        <div>
 
-            <AppBar position={"static"} color={"primary"}>
+
+
+
+
+    return(
+        <div className={classes.grow}>
+            <AppBar position={"static"}>
                 <Toolbar>
-                    <IconButton edge={"start"} className={classes.menuButton} color={"primary"} aria-label={"menu"}>
+                    <IconButton
+                        edge={"start"}
+                        className={classes.menuButton}
+                        color={"inherit"}
+                        aria-label={"open drawer"}
+
+                    >
                         <MenuIcon/>
                     </IconButton>
-                    <Typography variant={"h6"} className={classes.title}>
-                        News
-                    </Typography>
-                    <Button color={"inherit"}> Login </Button>
                 </Toolbar>
             </AppBar>
-
-
         </div>
     )
+
 }
 
-export default NavBar;
