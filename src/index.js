@@ -4,8 +4,7 @@ import * as Sentry from "@sentry/react";
 import App from "./App";
 
 Sentry.init({
-  dsn:
-    "https://e63b522e35a445928268f8db25357edb@o356272.ingest.sentry.io/5381759",
+  dsn: process.env.REACT_APP_DSN || "",
 });
 
 const rootElement = document.getElementById("root");
