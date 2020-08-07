@@ -1,17 +1,15 @@
-import React, {Component} from "react";
-import HomePage from "./components/HomePage";
-
+import React, { Component } from "react";
+import LoginPage from "./components/Form";
 
 const App = () => {
-
-
-    return (
-        <div>
-
-            <HomePage/>
-
-        </div>
-    )
-}
+  return (
+    <div>
+      <LoginPage />
+      <p>
+        <button onClick={methodDoesNotExist}>Break the world</button>
+      </p>
+    </div>
+  );
+};
 
 export default App;

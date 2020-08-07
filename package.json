@@ -4,7 +4,8 @@
   "description": "React Learning",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel -p 5678 public/index.html"
+    "dev": "parcel -p 5678 public/index.html",
+    "build": "parcel build public/index.html"
   },
   "repository": "https://github.com/brunoalfred/ui.git",
   "author": "Bruno Alfred <alfredybruno@gmail.com>",
@@ -12,10 +13,13 @@
   "dependencies": {
     "@material-ui/core": "^4.10.0",
     "@material-ui/icons": "^4.9.1",
+    "@sentry/react": "^5.20.1",
     "axios": "^0.19.2",
+    "bootstrap": "^4.5.2",
     "public": "^0.1.5",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.5.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
