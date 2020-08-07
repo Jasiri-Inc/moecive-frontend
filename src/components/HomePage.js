@@ -1,26 +1,20 @@
-import React from "react";
-import {makeStyles} from "@material-ui/core/styles";
-import Background from "/public/main.jpg";
+import React, {Compenent} from "react";
+
+const parStyle = {
+    align: 'center',
+    padding: 100,
+    
+}
 
 
-const useStyles = makeStyles((theme) => ({
-    backgroundImage: {
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundImage: `url(${Background})`,
-        backgroundRepeat: 'no-repeat',
-    }
-}));
-
-export default function HomePage() {
-
-    const classes = useStyles();
-
+export default function HomePage(){
     return(
-        <div>
-            <img src="/public/main.jpg" alt={}/>
-        </div>
+        <div className="details">
+            <a href="#"> 
+            
+            <p style={parStyle}>hello world, welcome to React</p>
+            
+            </a>
+            </div>
     )
-
-
 }
