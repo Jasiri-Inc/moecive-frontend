@@ -23,5 +23,6 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "proxy": "http://localhost:3000"
 }
