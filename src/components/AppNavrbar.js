@@ -15,6 +15,16 @@ export default function AppNavbar() {
           <Link className="nav-item nav-link" to="/about">
             About
           </Link>
+          <div
+            className="navbar-nav"
+          >
+            <Link className="nav-item nav-link" to="/login">
+              Login
+            </Link>
+            <Link className="nav-item nav-link" to="/register">
+              Register
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
