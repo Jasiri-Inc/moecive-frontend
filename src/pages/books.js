@@ -21,7 +21,7 @@ export default function Books() {
             href="#"
             className="list-group-item list-group-item-action flex-column align-items-start"
           >
-            <div className="d-flex w-100 justify-content-between">
+            <div className="d-flex w-100 justify-content-between ">
               <h5 className="mb-1">
                 <strong>{book.name}</strong>
               </h5>
