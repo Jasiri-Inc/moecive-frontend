@@ -33,6 +33,15 @@ app.use("/login", loginRouter);
 // app.use('/book', bookRouter);
 app.use("/api/v1/books", booksRouter);
 
+// Connect to DB
+try {
+  mongoose.connect("mongodb://localhost:27017/books", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+} catch (error) {
+  handleError(error);
+}
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
