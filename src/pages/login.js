@@ -1,12 +1,7 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
-// const divStyle = {
-//   padding: 50,
-//   dispaly: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-// };
+
 
 export default function Login() {
   return (
