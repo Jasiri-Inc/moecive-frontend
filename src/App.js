@@ -6,7 +6,7 @@ import About from "./pages/about";
 import Register from "./pages/register";
 import Login from "./pages/login";
 import Books from "./pages/books";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
