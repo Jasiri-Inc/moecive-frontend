@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel -p 5678 public/index.html",
-    "build": "parcel build public/index.html"
+    "build": "parcel build public/index.html",
+    "test": "jest"
   },
   "repository": "https://github.com/brunoalfred/ui.git",
   "author": "Bruno Alfred <alfredybruno@gmail.com>",
@@ -22,7 +23,9 @@
     "reactstrap": "^8.5.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "jest": "^26.3.0",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^16.13.1"
   },
   "proxy": "http://localhost:3000"
 }
