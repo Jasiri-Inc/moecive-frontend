@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/home/Home";
 import AppNavbar from "./components/AppNavrbar";
-import About from "./pages/about";
-import Register from "./pages/register";
-import Login from "./pages/login";
-import Books from "./pages/books";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+import About from "./pages/about/About";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+import Books from "./pages/books/Books";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const App = () => {
