@@ -7,7 +7,7 @@ export default function AppNavbar() {
       <div className="container">
         <div className="nav navbar-nav">
           <Link className="nav-item nav-link active" to="/">
-            Home <span className="sr-only">(current)</span>
+            Home 
           </Link>
           <Link className="nav-item nav-link" to="/books">
             Books
