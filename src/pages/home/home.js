@@ -1,5 +1,4 @@
 import React from "react";
-
 import  Footer  from "components/Footer";
 
 export default function Home() {
@@ -11,31 +10,28 @@ export default function Home() {
         <div className="container">
           <h1 className="display-3">Hello, world!</h1>
           <p>
-            This is a template for a simple marketing or informational website.
-            It includes a large callout called a jumbotron and three supporting
-            pieces of content. Use it as a starting point to create something
-            more unique.
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
           </p>
           <p>
-            <a className="btn btn-primary btn-lg" href="#" role="button">
+            <a className="btn btn-primary btn-lg" href="http://moecive.netlify.app/" role="button">
               Learn more »
             </a>
           </p>
         </div>
       </div>
       <div className="container">
-        {/* Example row of columns */}
         <div className="row">
           <div className="col-md-4">
             <h2>Heading</h2>
             <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.{" "}
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
             </p>
             <p>
-              <a className="btn btn-secondary" href="#" role="button">
+              <a className="btn btn-secondary" href="http://moecive.netlify.app/" role="button">
                 View details »
               </a>
             </p>
@@ -43,13 +39,14 @@ export default function Home() {
           <div className="col-md-4">
             <h2>Heading</h2>
             <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.{" "}
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+              
             </p>
             <p>
-              <a className="btn btn-secondary" href="#" role="button">
+              <a className="btn btn-secondary" href="http://moecive.netlify.app/" role="button">
                 View details »
               </a>
             </p>
@@ -57,13 +54,13 @@ export default function Home() {
           <div className="col-md-4">
             <h2>Heading</h2>
             <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
+            Welcome to our site || Welcome to our site || Welcome to our site
             </p>
             <p>
-              <a className="btn btn-secondary" href="#" role="button">
+              <a className="btn btn-secondary" href="http://moecive.netlify.app/" role="button">
                 View details »
               </a>
             </p>
@@ -71,7 +68,6 @@ export default function Home() {
         </div>
         <hr />
       </div>{" "}
-      {/* /container */}
     </main>
     <Footer name="Bruno" />
     </div>
