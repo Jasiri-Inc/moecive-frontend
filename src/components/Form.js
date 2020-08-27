@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const LoginForm = (props) => {
   return (
-    <Form>
+    <div className="container">
+      <Form>
       <Row form>
         <Col md={6}>
           <FormGroup>
@@ -54,6 +55,7 @@ const LoginForm = (props) => {
       </FormGroup>
       <Button>Sign in</Button>
     </Form>
+    </div>
   );
 }
 
