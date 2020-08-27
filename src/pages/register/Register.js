@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 export default function Register() {
   return (
-    <div className="d-flex justify-content-center ">
+    <div className="d-flex justify-content-center">
       <Form>
         <Row form>
           <Col md={6}>
@@ -73,7 +73,7 @@ export default function Register() {
             Check me out
           </Label>
         </FormGroup>
-        <Button>Sign in</Button>
+        <Button>Register</Button>
       </Form>
     </div>
   );
