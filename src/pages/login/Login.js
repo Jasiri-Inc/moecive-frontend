@@ -1,42 +1,28 @@
 import React from "react";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
+import { Row, Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 
 
 export default function Login() {
   return (
-    <div>
-      <Form inline className="container mt-3">
-        <div>
-          <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-            <Label for="exampleEmail" className="mr-sm-2">
-              Email
-            </Label>
-
-            <Input
-              type="email"
-              name="email"
-              id="exampleEmail"
-              placeholder="something@idk.cool"
-            />
-          </FormGroup>
-        </div>
-
-        <div>
-          <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-            <Label for="examplePassword" className="mr-sm-2">
-              Password
-            </Label>
-            <Input
-              type="password"
-              name="password"
-              id="examplePassword"
-              placeholder="don't tell!"
-            />
-          </FormGroup>
-        </div>
-        <Button>Submit</Button>
-      </Form>
+    <div  className="d-flex justify-content-center pd-2">
+      <Row form>
+          <Col md={10}>
+            <FormGroup>
+              <Label for="exampleCity">Email || Phone || Username</Label>
+              <Input type="text" name="city" id="exampleCity" placeholder="aa" />
+            </FormGroup>
+          </Col>
+          
+          <Col md={10}>
+            <FormGroup>
+              <Label for="exampleZip">Password</Label>
+              <Input type="text" name="zip" id="exampleZip" placeholder="aa" />
+            </FormGroup>
+          </Col>
+        </Row>
+        
     </div>
   );
 }
+
