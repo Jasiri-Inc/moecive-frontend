@@ -5,7 +5,7 @@ import { Row, Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 export default function Login() {
   return (
-    <div  className="d-flex justify-content-center" style={{paddingTop: 50}}>
+    <div  className="d-flex justify-content-center" style={{paddingTop: 70}}>
       <Row form>
           <Col md={10}>
             <FormGroup>
