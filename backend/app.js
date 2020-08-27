@@ -27,9 +27,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/register", registerRouter);
+// app.use("/login", loginRouter);
+// app.use("/register", registerRouter);
 app.use("/about", aboutRouter);
-app.use("/login", loginRouter);
 app.use("/inbox", inboxRouter);
 app.use("/api/v1/books", booksRouter);
 
