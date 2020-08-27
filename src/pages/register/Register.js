@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 export default function Register() {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center " style={{paddingTop: 70}}>
       <Form>
         <Row form>
           <Col md={6}>
@@ -47,26 +47,6 @@ export default function Register() {
             placeholder="Repeate the Strong password"
           />
         </FormGroup>
-        <Row form>
-          <Col md={6}>
-            <FormGroup>
-              <Label for="exampleCity">City</Label>
-              <Input type="text" name="city" id="exampleCity" />
-            </FormGroup>
-          </Col>
-          <Col md={4}>
-            <FormGroup>
-              <Label for="exampleState">State</Label>
-              <Input type="text" name="state" id="exampleState" />
-            </FormGroup>
-          </Col>
-          <Col md={2}>
-            <FormGroup>
-              <Label for="exampleZip">Zip</Label>
-              <Input type="text" name="zip" id="exampleZip" />
-            </FormGroup>
-          </Col>
-        </Row>
         <FormGroup check>
           <Input type="checkbox" name="check" id="exampleCheck" />
           <Label for="exampleCheck" check>
