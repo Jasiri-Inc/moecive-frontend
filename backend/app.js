@@ -10,7 +10,7 @@ const indexRouter = require("./routes/index");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const aboutRouter = require("./routes/about");
-const bookRouter = require("./routes/book");
+const inboxRouter = require("./routes/inbox");
 const booksRouter = require("./routes/books");
 
 const app = express();
@@ -30,7 +30,7 @@ app.use("/", indexRouter);
 app.use("/register", registerRouter);
 app.use("/about", aboutRouter);
 app.use("/login", loginRouter);
-// app.use('/book', bookRouter);
+app.use("/inbox", inboxRouter);
 app.use("/api/v1/books", booksRouter);
 
 // Connect to DB
