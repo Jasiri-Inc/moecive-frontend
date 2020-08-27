@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, FormGroup, Label, Input } from "reactstrap";
+import { Col, Row, Form, Button, FormGroup, Label, Input } from "reactstrap";
 
 export default function Register() {
   return (
