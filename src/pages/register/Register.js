@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 export default function Register() {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center " style={{paddingTop: 70}}>
       <Form>
         <Row form>
           <Col md={6}>
