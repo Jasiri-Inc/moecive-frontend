@@ -11,7 +11,6 @@ const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const aboutRouter = require("./routes/about");
 const inboxRouter = require("./routes/inbox");
-const booksRouter = require("./routes/books");
 
 const app = express();
 
@@ -27,11 +26,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-// app.use("/login", loginRouter);
-// app.use("/register", registerRouter);
+app.use("/login", loginRouter);
+app.use("/register", registerRouter);
 app.use("/about", aboutRouter);
 app.use("/inbox", inboxRouter);
-app.use("/api/v1/books", booksRouter);
 
 // Connect to DB
 try {
@@ -39,6 +37,7 @@ try {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
+  console.log("connected successfully");
 } catch (error) {
   handleError(error);
 }
