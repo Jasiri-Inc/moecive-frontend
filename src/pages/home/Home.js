@@ -61,7 +61,7 @@ export default function Home() {
                   href="http://moecive.netlify.app/"
                   role="button"
                 >
-                  ✍🏽{" "}
+                 ✍🏽
                 </a>
               </p>
             </div>
