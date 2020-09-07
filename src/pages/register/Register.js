@@ -19,7 +19,7 @@ export default function Register() {
   const [useremail, setUseremail] = useState("");
   const [password, setPassword] = useState("");
 
-const [mutate, {status, data, error}] = useMutation(
+const [mutate] = useMutation(
   ({useremail,password}) => axios.post('http://127.0.0.1:5000/register', {useremail, password})
 )
   const createUser = async e => {

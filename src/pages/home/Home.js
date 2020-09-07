@@ -19,7 +19,7 @@ export default function Home() {
                 href="http://moecive.netlify.app/"
                 role="button"
               >
-                👽
+                click
               </a>
             </p>
           </div>
@@ -35,7 +35,7 @@ export default function Home() {
                   href="http://moecive.netlify.app/"
                   role="button"
                 >
-                  ✍🏽
+                  click
                 </a>
               </p>
             </div>
@@ -48,7 +48,7 @@ export default function Home() {
                   href="http://moecive.netlify.app/"
                   role="button"
                 >
-                  ✍🏽
+                  click
                 </a>
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
                   href="http://moecive.netlify.app/"
                   role="button"
                 >
-                 ✍🏽
+                 click
                 </a>
               </p>
             </div>
