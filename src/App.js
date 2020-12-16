@@ -8,6 +8,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Books from "./pages/books/Books";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './style.css'
 
 
 const App = () => {
