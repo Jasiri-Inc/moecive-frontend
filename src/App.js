@@ -6,7 +6,7 @@ import AppNavbar from "./components/AppNavrbar";
 import About from "./pages/about/About";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
-import Books from "./pages/books/Books";
+import Documents from "./pages/documents/Documents";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.css'
 
@@ -26,8 +26,8 @@ const App = () => {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/books">
-            <Books />
+          <Route path="/documents">
+            <documents />
           </Route>
           <Route path="/">
             <Home />
