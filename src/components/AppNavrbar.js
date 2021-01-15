@@ -11,7 +11,7 @@ export default function AppNavbar() {
               Home
             </Link>
             <Link className="nav-item nav-link" to="/books">
-              Books
+              Documents
             </Link>
             <Link className="nav-item nav-link" to="/about">
               About
