@@ -27,7 +27,7 @@ const App = () => {
             <Register />
           </Route>
           <Route path="/documents">
-            <documents />
+            <Documents />
           </Route>
           <Route path="/">
             <Home />
