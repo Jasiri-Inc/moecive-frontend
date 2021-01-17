@@ -1,9 +1,9 @@
 import React from "react";
 import { useQuery } from "react-query";
 
-export default function Books() {
-  const { isLoading, error, data } = useQuery("books", () =>
-    fetch("http://localhost:3000/api/v1/books").then((res) => res.json())
+export default function Documents() {
+  const { isLoading, error, data } = useQuery("documents", () =>
+    fetch("http://localhost:3000/api/v1/documents").then((res) => res.json())
   );
 
   if (isLoading) return "Loading...";
@@ -12,7 +12,7 @@ export default function Books() {
 
   return (
     <div className="container mt-3">
-      <h1>Books</h1>
+      <h1>Documents</h1>
 
       <div className="list-group">
         {data.map((book) => (

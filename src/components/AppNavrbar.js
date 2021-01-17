@@ -10,8 +10,8 @@ export default function AppNavbar() {
             <Link className="nav-item nav-link active" to="/">
               Home
             </Link>
-            <Link className="nav-item nav-link" to="/books">
-              Books
+            <Link className="nav-item nav-link" to="/documents">
+              Documents
             </Link>
             <Link className="nav-item nav-link" to="/about">
               About
